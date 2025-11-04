@@ -1,0 +1,11 @@
+---
+
+- name: A playbook to succeed
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Succeed at something
+      ansible.builtin.debug:
+        msg: "hello world"
+

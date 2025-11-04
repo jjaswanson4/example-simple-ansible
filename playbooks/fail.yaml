@@ -1,0 +1,10 @@
+---
+
+- name: A playbook to fail
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Succeed at something
+      ansible.builtin.fail:
+

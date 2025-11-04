@@ -1,0 +1,10 @@
+---
+
+- name: A playbook to wait
+  hosts: localhost
+  gather_facts: false
+  connection: local
+  tasks:
+    - name: Wait for 5 minutes
+      ansible.builtin.pause:
+        minutes: 5
